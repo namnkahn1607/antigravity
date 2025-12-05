@@ -4,4 +4,5 @@ func main() {
 	astarSearch()
 	bipartite()
 	centroid()
+	topological()
 }
