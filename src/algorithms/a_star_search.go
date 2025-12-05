@@ -7,8 +7,12 @@ import (
 	"fmt"
 )
 
-type Astar struct{}
+/*
+	Analysis on Complexity:
 
+- Time: O(N) average/worst case.
+- Space: O(N^2) as the PQ get 'bloated' due to laziness.
+*/
 func main() {
 	astar := &Astar{}
 	mat := [][]int{
@@ -82,6 +86,7 @@ func (a *Astar) ShortestPath(mat [][]int) int {
 	return -1
 }
 
+type Astar struct{}
 type Position struct{ r, c int }
 type Node struct {
 	r, c int
