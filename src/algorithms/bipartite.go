@@ -1,5 +1,5 @@
 /* algorithms: Bipartite */
-// check if Graph is bipartite.
+// check if Graph is bipartite (Graph).
 package main
 
 import "fmt"
