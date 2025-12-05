@@ -33,11 +33,6 @@ func (b *Bipartite) isBipartite(V int, edges [][2]int) bool {
 	color := make([]bool, V)
 	marked := make([]bool, V)
 
-	for i := 0; i <= V; i++ {
-		marked[i] = false
-		color[i] = false
-	}
-
 	var dfs func(curr int) bool
 	dfs = func(curr int) bool {
 		marked[curr] = true
@@ -64,7 +59,7 @@ func (b *Bipartite) isBipartite(V int, edges [][2]int) bool {
 		return true
 	}
 
-	for i := 0; i <= V; i++ {
+	for i := range V {
 		if !marked[i] && !dfs(i) {
 			return false
 		}
