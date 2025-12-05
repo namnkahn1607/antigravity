@@ -1,5 +1,5 @@
 /* algorithms: Centroid of a Graph */
-// a minimum height tree algorithm
+// a minimum height tree algorithm (Undirected Graph).
 package main
 
 import "fmt"
